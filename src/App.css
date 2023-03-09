@@ -1,38 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
+  background-color: #202632;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  background-color: #313A49;
+  width: 410px;
+  height: 250px;
+  margin: auto auto;
+  transform: translateX(50%);
+  transform: translateY(50%);
+  background-color: #313A49;
+  border-radius: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.adviceId{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 20%;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 20px;
+  color: #51FAA6;
+}
+.adviceName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFF;
+}
+/*  fill: hsl(150, 100%, 66%); */
+/* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) */
+.botao{
+  width: 50px; height: 50px;
+  background-color: #52ffa8;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -25px;
+  right: 0px; left: 0px;
+  margin: 0 auto;
+}
+.botao:hover{
+  cursor: pointer;
+  background-color: rgba(82, 255, 168, .8);
+  filter: blur(1px);
+}
+.divider-desk{
+  width: 300px;
+  display: flex;
+  margin: 0 auto;
+}
+.divider-mobile{
+  display: none;
+}
+.dice{
+   width: 20px; height: 20px;
+  background-color: #52ffa8;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 375px) {
+  .divider-desk{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .divider-mobile{
+    display: flex;
+    width: 200px;
+    display: flex;
+    margin: 0px auto 50px auto;
+  }
+  .container{
+    width: 90%;
+    height: 200px;
   }
 }
