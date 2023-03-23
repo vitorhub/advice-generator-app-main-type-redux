@@ -14,7 +14,6 @@ const App: React.FC = () => {
     fetch(`https://api.adviceslip.com/advice`) // para fetch
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setEstadoId(data.slip.id);
         setEstadoAdvice(data.slip.advice)
       })
